@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaoni Wang | BD & Quant Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=JetBrains+Mono:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span>BUSINESS DEVELOPMENT // PYTHON // SCALA // DATABASES // SaaS // OTC SWAPS // FORWARD CURVES // ENERGY MARKETS // </span>
+            <span>BUSINESS DEVELOPMENT // PYTHON // SCALA // DATABASES // SaaS // OTC SWAPS // FORWARD CURVES // ENERGY MARKETS // </span>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">X.WANG</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#interests">Interests</a>
+            </div>
+        </nav>
+
+        <section id="about" class="hero">
+            <div class="hero-text">
+                <div class="name-wrapper" id="name-container">
+                    <h1 class="name-en">HELLO, I'M<br>XIAONI</h1>
+                    <h1 class="name-zh">你好，我是小妮</h1>
+                </div>
+                
+                <div class="hero-details">
+                    <p class="tagline">BUSINESS DEVELOPMENT / QUANTITATIVE ANALYST / ROBOTICS</p>
+                    <div class="contact-header">
+                        <a href="https://wa.me/6598125716" target="_blank" class="contact-chip"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        <span class="contact-chip"><i class="fab fa-weixin"></i> ulyssesuuu</span>
+                        <a href="mailto:xiaoni.wang01@outlook.com" class="contact-chip"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
+                    <p class="bio">Born in <strong>Nov 2001</strong>. Pursuing <strong>MSc in Financial Engineering at NUS (Part-time)</strong>.</p>
+                    <p class="bio-sub">Currently at <strong>CurveSeries</strong>, focused on making energy market data clearer for traders.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-title-wrap">
+                <h2 class="section-title">01 / PROJECT_NODES</h2>
+                <div id="api-status" class="api-status">STABLE</div>
+            </div>
+            <div id="repo-grid" class="repo-grid"></div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2 class="section-title">02 / PROFESSIONAL_LOG</h2>
+            <div class="timeline-container">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">PRESENT</div>
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="job-info">
+                                    <h3>Business Development</h3>
+                                    <p class="company">CurveSeries (Oil Pricing)</p>
+                                </div>
+                                <div class="status-tag">ACTIVE</div>
+                            </div>
+                            <div class="card-body">
+                                <p>Managing <strong>OTC commodity swaps</strong> and forward curve data. Specializing in market data clarity and driving product adoption for traders.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025.02</div>
+                        <div class="timeline-card">
+                            <div class="card-header"><div class="job-info"><h3>Commodity Analyst</h3><p class="company">Kpler</p></div></div>
+                            <div class="card-body"><p>Automated supply-demand signals using <strong>Python + Prefect</strong> for LNG/Oil markets.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024.05</div>
+                        <div class="timeline-card">
+                            <div class="card-header"><div class="job-info"><h3>Quant Intern</h3><p class="company">Avantgarde Asset Mgmt</p></div></div>
+                            <div class="card-body"><p><strong>FIX automation</strong> for UST futures & <strong>GPU acceleration</strong> for real-time order books.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023.09</div>
+                        <div class="timeline-card">
+                            <div class="card-header"><div class="job-info"><h3>SG Finalist</h3><p class="company">UBS Coding Challenge</p></div></div>
+                            <div class="card-body"><p>Solved algorithmic problems in a 2-day hackathon using <strong>Flask</strong>.</p></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023.01</div>
+                        <div class="timeline-card">
+                            <div class="card-header"><div class="job-info"><h3>Tech Analyst Intern</h3><p class="company">BofA Merrill Lynch</p></div></div>
+                            <div class="card-body"><p>Implemented <strong>Scala ZIO Kafka</strong> WebSocket flows & AntLR4 syntax checkers.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022.07</div>
+                        <div class="timeline-card">
+                            <div class="card-header"><div class="job-info"><h3>ML Engineer Intern</h3><p class="company">ERI@N (NTU)</p></div></div>
+                            <div class="card-body"><p>Predicted energy prices using <strong>LSTM & XGBoost</strong> (89% accuracy). Integrated <strong>MongoDB</strong> for time-series data.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022.06</div>
+                        <div class="timeline-card">
+                            <div class="card-header"><div class="job-info"><h3>Research Intern</h3><p class="company">SUTD ExploreCS</p></div></div>
+                            <div class="card-body"><p>Built Java/JS web apps with <strong>Sankey diagrams</strong> to visualize sustainable energy flows.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="interests" class="interest-section">
+            <div class="container">
+                <h2 class="section-title" style="color: #888; margin-bottom: 40px;">03 / PERSONAL_ECHO</h2>
+            </div>
+            <div class="interest-wall-container">
+                <div class="interest-track t-pink">
+                    <span>CHOPIN // RACHMANINOFF // PROKOFIEV // BRAHMS // PIANO // GUITAR // BASS // </span>
+                    <span>CHOPIN // RACHMANINOFF // PROKOFIEV // BRAHMS // PIANO // GUITAR // BASS // </span>
+                </div>
+                <div class="interest-track t-cyan">
+                    <span>HISTORY // RELIGION // PHILOSOPHY // QUANT SOCIOLOGY // DOSTOYEVSKY // </span>
+                    <span>HISTORY // RELIGION // PHILOSOPHY // QUANT SOCIOLOGY // DOSTOYEVSKY // </span>
+                </div>
+                <div class="interest-track t-yellow">
+                    <span>SKATEBOARDING // SOLO TRIPS // AUSTRALIA // NZ // EUROPE // HUNGARY // </span>
+                    <span>SKATEBOARDING // SOLO TRIPS // AUSTRALIA // NZ // EUROPE // HUNGARY // </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">04 / GEOGRAPHICAL_MIGRATION</h2>
+            <div class="migration-visual">
+                <div class="migration-steps">
+                    <div class="m-step"><span>2001 - 2012</span><h4>LINJIANG</h4><p>Sino-Korean Border</p></div>
+                    <div class="m-step"><span>2012 - 2017</span><h4>CHANGCHUN</h4><p>HS Attached to NENU</p></div>
+                    <div class="m-step"><span>2017 - NOW</span><h4>SINGAPORE</h4><p>NTU & NUS MFE</p></div>
+                </div>
+                <div id="migration-map" class="map-container"></div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 XIAONI WANG // BD & QUANT PRECISION</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
