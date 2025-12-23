@@ -113,3 +113,71 @@ body { font-family: 'Inter', sans-serif; overflow-x: hidden; scroll-behavior: sm
 }
 
 .footer { padding: 80px 0; text-align: center; color: #ccc; font-family: 'JetBrains Mono'; font-size: 0.75rem; }
+
+/* --- NEW: Projects Specific Styles --- */
+
+/* 只有 Developing 状态显示的绿色标签 */
+.status-tag-sm.developing {
+    display: inline-block;
+    color: #00c853;
+    border: 1px solid #00c853;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    background: rgba(0, 200, 83, 0.05);
+    margin-left: 10px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* 隐藏其他状态的 Tag */
+.status-tag-sm.hidden {
+    display: none;
+}
+
+/* Trading Dashboard 双入口链接高亮 */
+.highlight-link {
+    color: #000;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.highlight-link:hover {
+    color: var(--blue); /* 使用你原来的蓝色变量 */
+}
+
+/* 翻页按钮悬停效果 */
+.pagination-controls button:hover:not(:disabled) {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+.pagination-controls button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* 添加在 style.css 末尾 */
+
+/* 底部链接基础样式 */
+.footer-link {
+    color: #999;
+    transition: color 0.2s;
+}
+.repo-card:hover .footer-link {
+    color: #000; /* 鼠标悬停卡片时，Repo文字变黑 */
+}
+
+/* Trading Dashboard 的高亮链接 */
+.highlight-link {
+    color: #000; /* 默认为黑色，确保可见 */
+    font-weight: 900;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.highlight-link:hover {
+    color: #00c853; /* 悬停时变绿，增加交互感 */
+}
